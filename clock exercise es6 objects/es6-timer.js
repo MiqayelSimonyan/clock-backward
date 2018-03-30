@@ -106,10 +106,10 @@ class Timer {
     }
 }
 
-window.onload = function () {
+window.onload = () => {
     const timer = new Timer();
     timer.setTime(timer.defaultValues);
-    timer.start_clocks && timer.start_clocks.forEach(function (start_clock) { start_clock.addEventListener('click', timer.start.bind(timer, start_clock)) });
-    timer.stop_clocks && timer.stop_clocks.forEach(function (stop_clock) { stop_clock.addEventListener('click', timer.stop.bind(timer, stop_clock)) })
-    timer.reset_clocks && timer.reset_clocks.forEach(function (reset_clock) { reset_clock.addEventListener('click', timer.reset.bind(timer, reset_clock)) });
+    timer.start_clocks && timer.start_clocks.forEach((start_clock) => { start_clock.addEventListener('click', timer.start.bind(timer, start_clock)) });
+    timer.stop_clocks && timer.stop_clocks.forEach((stop_clock) => { stop_clock.addEventListener('click', timer.stop.bind(timer, stop_clock)) })
+    timer.reset_clocks && timer.reset_clocks.forEach((reset_clock) => { reset_clock.addEventListener('click', timer.reset.bind(timer, reset_clock)) });
 };
