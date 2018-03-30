@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="es6-timer.js"></script>
+    <title>Clock Exercise</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light nav nav-tabs px-5">
+        <a href="/" class="navbar-brand">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar5">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-stretch" id="navbar5">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Link
+                        <span class="sr-only">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="ml-3 my-auto d-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control border-right-0" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container clocks_wrapper">
+        <div class="clocks_wrapper_inside">
+            <section class="mt-5">
+                <h2>Game Clock Exercise</h2>
+            </section>
+            <div class="col-md-12 row column_wrapper">
+                <div class="col-md-12 d-flex column_wrapper">
+                    <div class="col-lg-7 col-md-12 col-sm-12 p-0 clock1_wrapper">
+                        <div class="clock clock1 border-right-0">
+                            <h1>Clock 1</h1>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 p-0 clock1_buttons">
+                        <div class="clock" id="0">
+                            <div class="time"></div>
+                            <button class="btn btn-danger stop_clock">Stop</button>
+                            <button class="btn btn-success start_clock">Start</button>
+                            <button type="button" class="btn btn-default reset_clock">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 row">
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                    <div class="clock" id="1">
+                        <h3>Clock 2</h3>
+                        <div class="time"></div>
+                        <button class="btn btn-danger stop_clock">Stop</button>
+                        <button class="btn btn-success start_clock">Start</button>
+                        <button type="button" class="btn btn-default reset_clock">Reset</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                    <div class="clock" id="2">
+                        <h3>Clock 3</h3>
+                        <div class="time"></div>
+                        <button class="btn btn-danger stop_clock">Stop</button>
+                        <button class="btn btn-success start_clock">Start</button>
+                        <button type="button" class="btn btn-default reset_clock">Reset</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 mt-3">
+                    <div class="clock" id="3">
+                        <h3>Clock 4</h3>
+                        <div class="time"></div>
+                        <button class="btn btn-danger stop_clock">Stop</button>
+                        <button class="btn btn-success start_clock">Start</button>
+                        <button type="button" class="btn btn-default reset_clock">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer mt-4">
+        <div class="container-fluid py-3">
+            <div class="row">
+                <div class="col-md-3 text-right small align-self-end">© TEST.COM</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
